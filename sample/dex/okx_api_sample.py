@@ -1,3 +1,5 @@
+import json
+
 import ccxt
 
 # 数据获取 -> 指标建设 -> 信号生成 -> 数据回测
@@ -6,21 +8,41 @@ secretkey = "2CBE3955F5D5391EDD7F663998A6ECD8"
 PASSPHRASE = "Lennie#002"
 
 exchange = ccxt.okx({
-    'apiKey': apikey,
-    'secret': secretkey,
-    'password': PASSPHRASE,
     'enableRateLimit': True,
 })
 
-# 获取账户余额
-balance = exchange.fetch_balance()
-print('账户余额信息:', balance)
 
-symbol = 'BTC/USDT'
-try:
-    ticker = exchange.fetch_ticker(symbol)
-    print(f'{symbol}的行情信息:', ticker)
-except ccxt.NetworkError as e:
-    print(f'网络错误: {e}')
-except ccxt.ExchangeError as e:
-    print(f'交易所错误: {e}')
+def getBalance():
+    # 获取账户余额
+    balance = exchange.fetch_balance()
+    print('账户余额信息:', balance)
+
+
+def getTicker() -> dict:
+    # 获取ETH/USDT的Ticker数据
+    print(exchange.fetch_markets())
+    print(exchange.markets)
+    ticker = exchange.fetch_ticker('ETH-USDT')
+    return ticker
+
+
+def getMarkets():
+    global exchange
+    exchange = ccxt.okx()
+    markets = exchange.fetch_markets()
+    # 保存到文件
+    with open('okx_markets.json', 'w') as f:
+        json.dump(markets, f)
+    # 之后在离线环境中加载
+    with open('okx_markets.json', 'r') as f:
+        markets = json.load(f)
+    # 手动设置市场数据
+    exchange.set_markets(markets)
+
+
+
+
+if __name__ == '__main__':
+    print(exchange.fetch_time())
+    getMarkets()
+    # getTicker()
