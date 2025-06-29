@@ -40,9 +40,13 @@ def getMarkets():
     exchange.set_markets(markets)
 
 
+def fetch_binance_ticker(symbol: str, show_all: bool = False) -> dict:
+    ban = ccxt.binance({
+        'enableRateLimit': True,  # 启用速率限制
+    })
+    ticker = ban.fetch_ticker(symbol)
+    return ticker
 
 
 if __name__ == '__main__':
-    print(exchange.fetch_time())
-    getMarkets()
-    # getTicker()
+    fetch_binance_ticker('ETH/USDT')
