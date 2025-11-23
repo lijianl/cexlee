@@ -1,0 +1,99 @@
+2025-11-23 20:06:21 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4315193536_1763899581.258256
+2025-11-23 20:06:21 - AsyncUtil - DEBUG - 任务  slow_function_4315193536_1763899581.258256  开始执行函数:  slow_function
+2025-11-23 20:06:22 - AsyncUtil - DEBUG - 任务  slow_function_4315193536_1763899581.258256  函数执行完成:  slow_function
+2025-11-23 20:06:22 - AsyncUtil - INFO - 异步任务  slow_function_4315193536_1763899581.258256  执行完成，耗时:  1.02秒
+2025-11-23 20:06:22 - AsyncUtil - INFO - 开始并发执行  3  个异步任务
+2025-11-23 20:06:22 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4315193536_1763899582.282809
+2025-11-23 20:06:22 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4315193536_1763899582.2829819
+2025-11-23 20:06:22 - AsyncUtil - DEBUG - 任务  slow_function_4315193536_1763899582.282809  开始执行函数:  slow_function
+2025-11-23 20:06:22 - AsyncUtil - DEBUG - 任务  slow_function_4315193536_1763899582.2829819  开始执行函数:  slow_function
+2025-11-23 20:06:22 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4315193536_1763899582.283247
+2025-11-23 20:06:22 - AsyncUtil - DEBUG - 任务  slow_function_4315193536_1763899582.283247  开始执行函数:  slow_function
+2025-11-23 20:06:23 - AsyncUtil - DEBUG - 任务  slow_function_4315193536_1763899582.282809  函数执行完成:  slow_function
+2025-11-23 20:06:23 - AsyncUtil - INFO - 异步任务  slow_function_4315193536_1763899582.282809  执行完成，耗时:  1.00秒
+2025-11-23 20:06:23 - AsyncUtil - DEBUG - 任务  slow_function_4315193536_1763899582.283247  函数执行完成:  slow_function
+2025-11-23 20:06:23 - AsyncUtil - INFO - 异步任务  slow_function_4315193536_1763899582.283247  执行完成，耗时:  1.51秒
+2025-11-23 20:06:24 - AsyncUtil - DEBUG - 任务  slow_function_4315193536_1763899582.2829819  函数执行完成:  slow_function
+2025-11-23 20:06:24 - AsyncUtil - INFO - 异步任务  slow_function_4315193536_1763899582.2829819  执行完成，耗时:  2.01秒
+2025-11-23 20:06:24 - AsyncUtil - INFO - 所有异步任务执行完成，总耗时:  2.01秒
+2025-11-23 20:06:24 - AsyncUtil - INFO - 开始执行带超时的任务:  slow_function，超时时间:  1.5秒
+2025-11-23 20:06:24 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4315193536_1763899584.29105
+2025-11-23 20:06:24 - AsyncUtil - DEBUG - 任务  slow_function_4315193536_1763899584.29105  开始执行函数:  slow_function
+2025-11-23 20:06:25 - AsyncUtil - DEBUG - 任务  slow_function_4315193536_1763899584.29105  函数执行完成:  slow_function
+2025-11-23 20:06:25 - AsyncUtil - INFO - 异步任务  slow_function_4315193536_1763899584.29105  执行完成，耗时:  1.00秒
+2025-11-23 20:06:25 - AsyncUtil - INFO - 带超时任务执行成功:  slow_function
+2025-11-23 20:06:25 - AsyncUtil - INFO - 开始执行带重试的任务:  failing_function，最大重试次数:  2
+2025-11-23 20:06:25 - AsyncUtil - INFO - 第  1  次尝试执行任务:  failing_function
+2025-11-23 20:06:25 - AsyncUtil - INFO - 开始异步执行任务:  failing_function_4323919968_1763899585.295496
+2025-11-23 20:06:25 - AsyncUtil - DEBUG - 任务  failing_function_4323919968_1763899585.295496  开始执行函数:  failing_function
+2025-11-23 20:06:25 - AsyncUtil - ERROR - 任务  failing_function_4323919968_1763899585.295496  函数执行失败:  failing_function,  错误:  模拟函数执行失败
+2025-11-23 20:06:25 - AsyncUtil - ERROR - 异步任务  failing_function_4323919968_1763899585.295496  执行失败，耗时:  0.00秒，错误:  模拟函数执行失败
+2025-11-23 20:06:25 - AsyncUtil - WARNING - 任务执行失败:  failing_function，错误:  模拟函数执行失败，0.5秒后重试
+2025-11-23 20:06:25 - AsyncUtil - ERROR - 同步运行异步协程失败:  This event loop is already running
+2025-11-23 20:06:25 - AsyncUtil - ERROR - 同步运行异步协程失败:  This event loop is already running
+2025-11-23 20:07:12 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4373520576_1763899632.6091409
+2025-11-23 20:07:12 - AsyncUtil - DEBUG - 任务  slow_function_4373520576_1763899632.6091409  开始执行函数:  slow_function
+2025-11-23 20:07:13 - AsyncUtil - DEBUG - 任务  slow_function_4373520576_1763899632.6091409  函数执行完成:  slow_function
+2025-11-23 20:07:13 - AsyncUtil - INFO - 异步任务  slow_function_4373520576_1763899632.6091409  执行完成，耗时:  1.01秒
+2025-11-23 20:07:13 - AsyncUtil - INFO - 开始并发执行  3  个异步任务
+2025-11-23 20:07:13 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4373520576_1763899633.616933
+2025-11-23 20:07:13 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4373520576_1763899633.6172218
+2025-11-23 20:07:13 - AsyncUtil - DEBUG - 任务  slow_function_4373520576_1763899633.616933  开始执行函数:  slow_function
+2025-11-23 20:07:13 - AsyncUtil - DEBUG - 任务  slow_function_4373520576_1763899633.6172218  开始执行函数:  slow_function
+2025-11-23 20:07:13 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4373520576_1763899633.617866
+2025-11-23 20:07:13 - AsyncUtil - DEBUG - 任务  slow_function_4373520576_1763899633.617866  开始执行函数:  slow_function
+2025-11-23 20:07:14 - AsyncUtil - DEBUG - 任务  slow_function_4373520576_1763899633.616933  函数执行完成:  slow_function
+2025-11-23 20:07:14 - AsyncUtil - INFO - 异步任务  slow_function_4373520576_1763899633.616933  执行完成，耗时:  1.01秒
+2025-11-23 20:07:15 - AsyncUtil - DEBUG - 任务  slow_function_4373520576_1763899633.617866  函数执行完成:  slow_function
+2025-11-23 20:07:15 - AsyncUtil - INFO - 异步任务  slow_function_4373520576_1763899633.617866  执行完成，耗时:  1.51秒
+2025-11-23 20:07:15 - AsyncUtil - DEBUG - 任务  slow_function_4373520576_1763899633.6172218  函数执行完成:  slow_function
+2025-11-23 20:07:15 - AsyncUtil - INFO - 异步任务  slow_function_4373520576_1763899633.6172218  执行完成，耗时:  2.00秒
+2025-11-23 20:07:15 - AsyncUtil - INFO - 所有异步任务执行完成，总耗时:  2.00秒
+2025-11-23 20:07:15 - AsyncUtil - INFO - 开始执行带超时的任务:  slow_function，超时时间:  1.5秒
+2025-11-23 20:07:15 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4373520576_1763899635.621907
+2025-11-23 20:07:15 - AsyncUtil - DEBUG - 任务  slow_function_4373520576_1763899635.621907  开始执行函数:  slow_function
+2025-11-23 20:07:16 - AsyncUtil - DEBUG - 任务  slow_function_4373520576_1763899635.621907  函数执行完成:  slow_function
+2025-11-23 20:07:16 - AsyncUtil - INFO - 异步任务  slow_function_4373520576_1763899635.621907  执行完成，耗时:  1.00秒
+2025-11-23 20:07:16 - AsyncUtil - INFO - 带超时任务执行成功:  slow_function
+2025-11-23 20:07:16 - AsyncUtil - INFO - 开始执行带重试的任务:  failing_function，最大重试次数:  2
+2025-11-23 20:07:16 - AsyncUtil - INFO - 第  1  次尝试执行任务:  failing_function
+2025-11-23 20:07:16 - AsyncUtil - INFO - 开始异步执行任务:  failing_function_4383508576_1763899636.6262348
+2025-11-23 20:07:16 - AsyncUtil - DEBUG - 任务  failing_function_4383508576_1763899636.6262348  开始执行函数:  failing_function
+2025-11-23 20:07:16 - AsyncUtil - ERROR - 任务  failing_function_4383508576_1763899636.6262348  函数执行失败:  failing_function,  错误:  模拟函数执行失败
+2025-11-23 20:07:16 - AsyncUtil - ERROR - 异步任务  failing_function_4383508576_1763899636.6262348  执行失败，耗时:  0.00秒，错误:  模拟函数执行失败
+2025-11-23 20:07:16 - AsyncUtil - WARNING - 任务执行失败:  failing_function，错误:  模拟函数执行失败，0.5秒后重试
+2025-11-23 20:07:17 - AsyncUtil - ERROR - 同步运行异步协程失败:  This event loop is already running
+2025-11-23 20:07:17 - AsyncUtil - ERROR - 同步运行异步协程失败:  This event loop is already running
+2025-11-23 20:21:19 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4306395328_1763900479.27726
+2025-11-23 20:21:19 - AsyncUtil - DEBUG - 任务  slow_function_4306395328_1763900479.27726  开始执行函数:  slow_function
+2025-11-23 20:21:20 - AsyncUtil - DEBUG - 任务  slow_function_4306395328_1763900479.27726  函数执行完成:  slow_function
+2025-11-23 20:21:20 - AsyncUtil - INFO - 异步任务  slow_function_4306395328_1763900479.27726  执行完成，耗时:  1.01秒
+2025-11-23 20:21:20 - AsyncUtil - INFO - 开始并发执行  3  个异步任务
+2025-11-23 20:21:20 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4306395328_1763900480.284988
+2025-11-23 20:21:20 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4306395328_1763900480.285345
+2025-11-23 20:21:20 - AsyncUtil - DEBUG - 任务  slow_function_4306395328_1763900480.284988  开始执行函数:  slow_function
+2025-11-23 20:21:20 - AsyncUtil - DEBUG - 任务  slow_function_4306395328_1763900480.285345  开始执行函数:  slow_function
+2025-11-23 20:21:20 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4306395328_1763900480.286182
+2025-11-23 20:21:20 - AsyncUtil - DEBUG - 任务  slow_function_4306395328_1763900480.286182  开始执行函数:  slow_function
+2025-11-23 20:21:21 - AsyncUtil - DEBUG - 任务  slow_function_4306395328_1763900480.284988  函数执行完成:  slow_function
+2025-11-23 20:21:21 - AsyncUtil - INFO - 异步任务  slow_function_4306395328_1763900480.284988  执行完成，耗时:  1.00秒
+2025-11-23 20:21:21 - AsyncUtil - DEBUG - 任务  slow_function_4306395328_1763900480.286182  函数执行完成:  slow_function
+2025-11-23 20:21:21 - AsyncUtil - INFO - 异步任务  slow_function_4306395328_1763900480.286182  执行完成，耗时:  1.51秒
+2025-11-23 20:21:22 - AsyncUtil - DEBUG - 任务  slow_function_4306395328_1763900480.285345  函数执行完成:  slow_function
+2025-11-23 20:21:22 - AsyncUtil - INFO - 异步任务  slow_function_4306395328_1763900480.285345  执行完成，耗时:  2.00秒
+2025-11-23 20:21:22 - AsyncUtil - INFO - 所有异步任务执行完成，总耗时:  2.00秒
+2025-11-23 20:21:22 - AsyncUtil - INFO - 开始执行带超时的任务:  slow_function，超时时间:  1.5秒
+2025-11-23 20:21:22 - AsyncUtil - INFO - 开始异步执行任务:  slow_function_4306395328_1763900482.2900858
+2025-11-23 20:21:22 - AsyncUtil - DEBUG - 任务  slow_function_4306395328_1763900482.2900858  开始执行函数:  slow_function
+2025-11-23 20:21:23 - AsyncUtil - DEBUG - 任务  slow_function_4306395328_1763900482.2900858  函数执行完成:  slow_function
+2025-11-23 20:21:23 - AsyncUtil - INFO - 异步任务  slow_function_4306395328_1763900482.2900858  执行完成，耗时:  1.00秒
+2025-11-23 20:21:23 - AsyncUtil - INFO - 带超时任务执行成功:  slow_function
+2025-11-23 20:21:23 - AsyncUtil - INFO - 开始执行带重试的任务:  failing_function，最大重试次数:  2
+2025-11-23 20:21:23 - AsyncUtil - INFO - 第  1  次尝试执行任务:  failing_function
+2025-11-23 20:21:23 - AsyncUtil - INFO - 开始异步执行任务:  failing_function_4314302560_1763900483.295792
+2025-11-23 20:21:23 - AsyncUtil - DEBUG - 任务  failing_function_4314302560_1763900483.295792  开始执行函数:  failing_function
+2025-11-23 20:21:23 - AsyncUtil - ERROR - 任务  failing_function_4314302560_1763900483.295792  函数执行失败:  failing_function,  错误:  模拟函数执行失败
+2025-11-23 20:21:23 - AsyncUtil - ERROR - 异步任务  failing_function_4314302560_1763900483.295792  执行失败，耗时:  0.00秒，错误:  模拟函数执行失败
+2025-11-23 20:21:23 - AsyncUtil - WARNING - 任务执行失败:  failing_function，错误:  模拟函数执行失败，0.5秒后重试
+2025-11-23 20:21:23 - AsyncUtil - ERROR - 同步运行异步协程失败:  This event loop is already running
+2025-11-23 20:21:23 - AsyncUtil - ERROR - 同步运行异步协程失败:  This event loop is already running
