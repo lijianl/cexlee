@@ -1,0 +1,10 @@
+2025-11-23 18:45:28 - LogUtil - DEBUG - 这是一条debug日志
+2025-11-23 18:45:28 - LogUtil - INFO - 这是一条info日志
+2025-11-23 18:45:28 - LogUtil - WARNING - 这是一条warning日志
+2025-11-23 18:45:28 - LogUtil - ERROR - 这是一条error日志
+2025-11-23 18:45:28 - LogUtil - CRITICAL - 这是一条critical日志
+2025-11-23 18:45:40 - LogUtil - DEBUG - 这是一条debug日志
+2025-11-23 18:45:40 - LogUtil - INFO - 这是一条info日志
+2025-11-23 18:45:40 - LogUtil - WARNING - 这是一条warning日志
+2025-11-23 18:45:40 - LogUtil - ERROR - 这是一条error日志
+2025-11-23 18:45:40 - LogUtil - CRITICAL - 这是一条critical日志

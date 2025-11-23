@@ -2,19 +2,24 @@ import asyncio
 import concurrent.futures
 from typing import Callable, Any, List, Optional
 import threading
+from kitx.LogUtil import LogUtil
+
+logger = LogUtil.get_logger2("AsyncUtil")
 
 
 class AsyncUtil:
+
     def __init__(self):
-        """初始化异步工具类"""
+        """public属性"""
         self.loop = None
         self.executor = None
+        """private method"""
         self._setup_event_loop()
 
     def _setup_event_loop(self):
         """设置事件循环"""
         try:
-            # 尝试获取当前线程的事件循环
+            # 尝试获取: 当前线程的事件循环
             self.loop = asyncio.get_running_loop()
         except RuntimeError:
             # 如果没有运行中的事件循环，则创建一个新的
@@ -29,7 +34,7 @@ class AsyncUtil:
         异步执行函数
 
         Args:
-            func: 要执行的函数
+            func: 要执行的函数，支持函数，coroutine
             *args: 函数的位置参数
             **kwargs: 函数的关键字参数
 
@@ -37,7 +42,7 @@ class AsyncUtil:
             函数执行结果
         """
         if asyncio.iscoroutinefunction(func):
-            # 如果是异步函数，直接await
+            # 如果是异步函数，直接await, 协程
             return await func(*args, **kwargs)
         else:
             # 如果是同步函数，在线程池中执行
@@ -59,6 +64,7 @@ class AsyncUtil:
         tasks = []
         for func_item in funcs:
             if isinstance(func_item, tuple):
+                # 获取函数的参数
                 func = func_item[0]
                 args = func_item[1] if len(func_item) > 1 else ()
                 kwargs = func_item[2] if len(func_item) > 2 else {}
@@ -110,10 +116,6 @@ class AsyncUtil:
             raise asyncio.TimeoutError(f"Function {func.__name__} execution timed out after {timeout} seconds")
 
     def close(self):
-        """关闭资源"""
+        """关闭线程池资源"""
         if self.executor:
             self.executor.shutdown(wait=True)
-
-
-# 全局实例
-async_util = AsyncUtil()

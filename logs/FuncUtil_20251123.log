@@ -1,0 +1,9 @@
+2025-11-23 18:55:34 - FuncUtil - INFO - hello request: args=('xxxx',), kwargs={}
+2025-11-23 18:55:34 - FuncUtil - INFO - hello response: hello,xxxx
+2025-11-23 18:55:34 - FuncUtil - INFO - hello req: args=('xxxx',), kwargs={}; reqId=279dbfe106614fcf9a157f8985b16777 
+2025-11-23 18:58:26 - FuncUtil - INFO - hello request: args=('xxxx',), kwargs={'k1': 'v1'}
+2025-11-23 18:58:26 - FuncUtil - INFO - hello response: hello,xxxx
+2025-11-23 18:58:26 - FuncUtil - INFO - hello req: args=('xxxx',), kwargs={}; reqId=b11b3980ea4e4aa6b29ddc5fb71730ca 
+2025-11-23 18:59:19 - FuncUtil - INFO - hello request: args=('1111',), kwargs={'k1': 'v1'}
+2025-11-23 18:59:19 - FuncUtil - INFO - hello response: hello,1111
+2025-11-23 18:59:19 - FuncUtil - INFO - hello req: args=('2222',), kwargs={'k1': 'v2'}; reqId=246025ea3ee04bd58ab30d3fcc2f4292 
